@@ -1,5 +1,8 @@
 import type { NextConfig } from 'next';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const withPlugins = require('next-compose-plugins');
+
 const nextConfig: NextConfig = {
   output: 'standalone',
   experimental: {
@@ -9,4 +12,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPlugins([], nextConfig);
