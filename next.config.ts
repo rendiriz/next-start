@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone',
+  experimental: {
+    ppr: true,
+    inlineCss: true,
+    reactCompiler: true,
+  },
 };
 
 export default nextConfig;
