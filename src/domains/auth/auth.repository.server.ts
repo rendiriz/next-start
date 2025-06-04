@@ -1,4 +1,4 @@
-import 'server-only';
+// import 'server-only';
 import { API_V1_ENDPOINTS } from '@/config/api';
 import { serverApi } from '@/lib/api/api.server';
 import type {
